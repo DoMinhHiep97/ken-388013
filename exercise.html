@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="txtValue">
+<input type="button" id="convert" value="Convert" onclick="perform()">
+<script>
+    function perform() {
+        let text = document.getElementById("txtValue").value;
+        let engLish = ["tired", "fuck", "life", "lucky", "smile"];
+        let vietNam = ["Mệt", "****", "cuộc đời", "May mắn", "Cười"];
+        for (let i = 0; i < engLish.length; i++) {
+            if (text === engLish[i]) {
+                alert(vietNam[i]);
+            }
+        }
+    }
+</script>
+</body>
+</html>
